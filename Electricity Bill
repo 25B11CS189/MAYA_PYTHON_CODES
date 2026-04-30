@@ -1,0 +1,32 @@
+x=int(input())
+if x<199:
+    c=x*1.2
+    p=1.2
+elif x>=200 and x<400:
+    c=x*1.4
+    p=1.4
+elif x>=400 and x<600:
+    c=x*1.6
+    p=1.6
+elif x>=600 and x<800:
+    c=x*1.8
+    p=1.8
+else:
+    c=x*2.0
+    p=2.0
+if c>400:
+    sur=c*0.15
+    total=c+sur
+    print("Units Consumed:",x)
+    print("Cost per Unit:",f"{p:.2f}")
+    print("Bill:",f"{c:.2f}")
+    print("Surcharge:",f"{sur:.2f}")
+    print("Total Amount:",f"{total:.2f}")
+else:
+    sur=0.0
+    total=c+sur
+    print("Units Consumed:",x)
+    print("Cost per Unit:",f"{p:.2f}")
+    print("Bill:",f"{c:.2f}")
+    print("Surcharge:",f"{sur:.2f}")
+    print("Total Amount:",f"{total:.2f}")
